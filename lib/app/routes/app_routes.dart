@@ -19,6 +19,7 @@ abstract class Routes {
 abstract class _Paths {
   _Paths._();
 
+   static const String MICROPHONE = '/microphone';
   static const String HOME = '/home';
   static const String LOGIN = '/login';
   static const String SIGNUP = '/signup';

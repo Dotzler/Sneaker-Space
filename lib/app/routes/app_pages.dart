@@ -13,6 +13,7 @@ import 'package:flutter_application_1/app/modules/http_screen/views/http_view.da
 import 'package:get/get.dart';
 import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
+import '../modules/home/views/microphone_view.dart';
 
 part 'app_routes.dart';
 
@@ -54,7 +55,7 @@ class AppPages {
     ),
     GetPage(
       name: _Paths.WISHLIST,
-      page: () => WishlistPage(wishlist: const [],),
+      page: () => WishlistPage(wishlist: [],),
     ),
 
     GetPage(
@@ -73,6 +74,11 @@ class AppPages {
       page: () => ArticleDetailWebView(article: Get.arguments),
       binding: ArticleDetailBinding(),
     ),
+    GetPage(
+     name: _Paths.MICROPHONE,
+      page: () => MicrophonePage(),
+    ),
+
     // Add more routes as needed
   ];
 }
