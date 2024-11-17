@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../controllers/cart_controller.dart';
-import '../controllers/bag_controller.dart';
+import '../controllers/order_controller.dart';
 
 class ProductPage extends StatefulWidget {
   final String title;
@@ -17,7 +17,7 @@ class ProductPage extends StatefulWidget {
 class _ProductPageState extends State<ProductPage> {
   int? selectedSize;
   final CartController cartController = Get.put(CartController());
-  final BagController bagController = Get.put(BagController()); // Inisialisasi BagController
+  final OrderController bagController = Get.put(OrderController()); // Inisialisasi BagController
   List<Map<String, dynamic>> reviews = [];
 
   void _addReview(Map<String, dynamic> review) {

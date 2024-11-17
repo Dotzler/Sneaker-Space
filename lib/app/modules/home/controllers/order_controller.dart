@@ -1,6 +1,6 @@
 import 'package:get/get.dart';
 
-class BagController extends GetxController {
+class OrderController extends GetxController {
   var purchasedItems = <Map<String, dynamic>>[].obs;
 
   // Fungsi untuk menambahkan barang yang telah dibeli

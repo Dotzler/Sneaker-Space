@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import '../controllers/bag_controller.dart';
+import '../controllers/order_controller.dart';
 import 'review_view.dart';
 
 class OrderPage extends StatelessWidget {
-  final BagController bagController = Get.put(BagController());
+  final OrderController bagController = Get.put(OrderController());
 
   @override
   Widget build(BuildContext context) {
